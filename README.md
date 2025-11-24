@@ -28,9 +28,12 @@ After a user logs in, the explorer process is created by the userinit process. U
 # Instructions:
 This is a basic project that can be integrated into any Delphi project as a file manager. It includes some fundamental functions such as copying, deleting, moving, and renaming. The code can be extended or reduced as needed. The project can also assign access rights to the user, which are currently disabled in the code. This is for good reason, as the code can grant or deny access rights. Therefore, it's important to familiarize yourself with this to avoid accidentally locking folders or entire hard drives.
 
-
-
-
+# Main functions and tasks:
+* Navigation: Browsing directories and file systems using a graphical user interface (GUI).
+* File management: Performing basic operations such as copying, moving, deleting, and renaming files and folders.
+* Creation: Creating new folders and files.
+* Managing external storage media: Accessing and organizing data on external drives, such as USB sticks or external hard drives.
+* Metadata editing: Changing file properties such as attributes or permissions.
 
 
 
