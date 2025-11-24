@@ -21,7 +21,9 @@ The application was renamed from "Windows Explorer" to "File Explorer" in Window
 
 </br>
 
+File Explorer is the default user interface for accessing and managing the file systems, but it is possible to perform such tasks on Windows without File Explorer. For example, the File ▸ Run menu option in Task Manager on Windows NT or later functions independently of File Explorer, as do commands run within a [command prompt](https://en.wikipedia.org/wiki/Command-line_interface#Command_prompt) window.
 
+After a user logs in, the explorer process is created by the userinit process. Userinit performs some initialization of the user environment (such as running the login script and applying group policies) and then looks in the registry at the Shell value and creates a process to run the system-defined shell – by default, Explorer.exe. Then Userinit exits. This is why Explorer.exe is shown by various process explorers with no parent – its parent has exited.
 
 
 
