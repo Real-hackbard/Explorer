@@ -25,7 +25,8 @@ File Explorer is the default user interface for accessing and managing the file 
 
 After a user logs in, the explorer process is created by the userinit process. Userinit performs some initialization of the user environment (such as running the login script and applying group policies) and then looks in the registry at the Shell value and creates a process to run the system-defined shell – by default, Explorer.exe. Then Userinit exits. This is why Explorer.exe is shown by various process explorers with no parent – its parent has exited.
 
-
+# Instructions:
+This is a basic project that can be integrated into any Delphi project as a file manager. It includes some fundamental functions such as copying, deleting, moving, and renaming. The code can be extended or reduced as needed. The project can also assign access rights to the user, which are currently disabled in the code. This is for good reason, as the code can grant or deny access rights. Therefore, it's important to familiarize yourself with this to avoid accidentally locking folders or entire hard drives.
 
 
 
