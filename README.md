@@ -11,7 +11,15 @@
 
 </br>
 
+File Explorer, previously known as Windows Explorer, is a [file manager](https://en.wikipedia.org/wiki/File_manager) application and default [desktop environment](https://en.wikipedia.org/wiki/Desktop_environment) that is included with releases of the Microsoft Windows operating system from Windows 95 onwards. It provides a graphical user interface for accessing the [file systems](https://en.wikipedia.org/wiki/File_system), as well as user interface elements such as the [taskbar](v) and desktop.
 
+The application was renamed from "Windows Explorer" to "File Explorer" in Windows 8; however, the old name of "Windows Explorer" can still be seen in the Windows Task Manager.
+
+</br>
+
+![Explorer](https://github.com/user-attachments/assets/500ee939-9df4-4132-b86c-b868f1cdeda7)
+
+</br>
 
 
 
