@@ -35,5 +35,7 @@ This is a basic project that can be integrated into any Delphi project as a file
 * Managing external storage media: Accessing and organizing data on external drives, such as USB sticks or external hard drives.
 * Metadata editing: Changing file properties such as attributes or permissions.
 
+</br>
 
+This is a dual-pane file manager, where the file is navigated on the left and execution is performed on the right.
 
