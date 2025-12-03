@@ -7,7 +7,7 @@ currently being supported with security updates.
 
 | Version | Supported          |
 | ------- | ------------------ |
-| 1.0.x   | :white_check_mark: Exception Error in Debugger Mode. | 
+| 1.0.x   | :x: Exception Error in Debugger Mode. | 
 | 1.0.1   | :white_check_mark: Fixed. | 
 
 ## Reporting a Vulnerability
