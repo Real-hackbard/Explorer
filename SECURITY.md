@@ -9,6 +9,7 @@ currently being supported with security updates.
 | ------- | ------------------ |
 | 1.0.x   | :x: Exception Error in Debugger Mode. | 
 | 1.0.1   | :white_check_mark: Fixed. | 
+| 1.0.2   | :white_check_mark: Added more features, Locate Computer onZop Itewm, Create File Formats, , Folder navigation backwards | 
 
 ## Reporting a Vulnerability
 
