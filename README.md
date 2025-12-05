@@ -17,7 +17,8 @@ The application was renamed from "Windows Explorer" to "File Explorer" in Window
 
 </br>
 
-![Explorer](https://github.com/user-attachments/assets/500ee939-9df4-4132-b86c-b868f1cdeda7)
+![Explorer](https://github.com/user-attachments/assets/595d687a-6578-4074-a937-103abbe02a27)
+
 
 </br>
 
