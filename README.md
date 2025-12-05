@@ -22,10 +22,10 @@ The application was renamed from "Windows Explorer" to "File Explorer" in Window
 
 </br>
 
-# v1.ß.1
+### v1.0.1
 * BugFix Menu Show Details range checking
 * BugFix StatusBar Panel [2] missed
-# v1.ß.2
+### v1.0.2
 * Add Added more features
 * Locate Computer onTop Itewm
 * Create File Formats (Excel, Word, Rar, Zip)
