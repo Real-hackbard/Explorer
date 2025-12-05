@@ -24,6 +24,11 @@ The application was renamed from "Windows Explorer" to "File Explorer" in Window
 
 * BugFix Menu Show Details range checking
 * BugFix StatusBar Panel [2] missed
+* Add Added more features
+* Locate Computer onTop Itewm
+* Create File Formats (Excel, Word, Rar, Zip)
+* Folder navigation backwards
+* Search File Mode in Folder
 
 </br>
 
