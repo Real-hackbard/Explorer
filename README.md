@@ -65,9 +65,19 @@ For quite some time now, the TShellTreeView module has no longer been installed 
 The components are included with the project and must be installed.  
 However, the source code remains integrated into your Delphi installation. You can manually install the component as follows:
 
+### Instructions:
+* Copy Source Code Files:
+In the Delphi installation directory, locate the files ```Vcl.Shell.ShellConsts.pas``` and ```Vcl.Shell.ShellCtrls.pas```.
+(Default path: ```C:\Program Files (x86)\Embarcadero\Studio\[Version Number]\source\vcl)```
+Copy these two files to a separate working directory.
 
+* Create and compile package:
+  * Open your Delphi IDE.
+  * Go to File > New > Package - Delphi and save it as ShellControls.bpl.
+  * Add the two copied .pas files to the package using the Project Manager.
 
-
+* Add Registration Procedure:
+    * Open the file ```Vcl.Shell.ShellCtrls.pas``` in your editor and add `procedure Register;` as the last line in the `interface` section. Insert the following code at the very top of the `implementation` section:
 
 
 
