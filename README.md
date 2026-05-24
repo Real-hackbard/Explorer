@@ -103,5 +103,15 @@ end;
 * Installing the Package:
 In the Project Manager, right-click on the package project and select Build. Next, right-click on the package and select Install. The components ```TShellTreeView, TShellListView```, and ```TShellChangeNotifier``` will then be available to you in the "Shell Controls" category.
 
+However, there are limitations—such as cutting and moving files—that are not supported by the component.
+
+The standard TShellListView component in Delphi does not natively feature built-in copy-and-paste functionality for Windows Explorer actions. The component serves primarily as a pure display of the file system.
+
+To replicate the file copying, cutting, and pasting functionality found in Windows Explorer, you must interact with the native Windows Shell interfaces (IShellFolder and IContextMenu). The Solution: Tapping into the Windows Shell Context Menu. Through the IContextMenu interface, you can directly instruct Windows to execute system-wide commands—such as 'copy', 'cut', or 'paste'—on the current directory. This allows Windows to automatically handle clipboard interactions, progress dialogs, and any potential file conflicts. Here is a proven method for implementing these commands within your TShellListView:
+
+
+
+
+
 
 
