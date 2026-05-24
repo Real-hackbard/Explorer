@@ -67,6 +67,7 @@ Here, ShelTreeView and ShellListview operate in combination as a standalone file
 <img src="https://github.com/user-attachments/assets/d0bfc022-e0ff-4031-9b0b-5308ae29e684" />
 
 </br>
+</br>
 
 For quite some time now, the TShellTreeView module has no longer been installed in the Components Palette by default in many versions of Delphi (e.g., Starter Editions starting with 10.2, as well as newer RAD Studio editions).
 
