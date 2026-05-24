@@ -103,6 +103,8 @@ end;
 * Installing the Package:
 In the Project Manager, right-click on the package project and select Build. Next, right-click on the package and select Install. The components ```TShellTreeView, TShellListView```, and ```TShellChangeNotifier``` will then be available to you in the "Shell Controls" category.
 
+</br>
+
 However, there are limitations—such as cutting and moving files—that are not supported by the component.
 
 The standard TShellListView component in Delphi does not natively feature built-in copy-and-paste functionality for Windows Explorer actions. The component serves primarily as a pure display of the file system.
