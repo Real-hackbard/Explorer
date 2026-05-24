@@ -52,3 +52,5 @@ This is a basic project that can be integrated into any Delphi project as a file
 
 This is a dual-pane file manager, where the file is navigated on the left and execution is performed on the right.
 
+
+# ShellTreeView & ShellListView
