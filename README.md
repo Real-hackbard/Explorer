@@ -62,7 +62,8 @@ This is a dual-pane file manager, where the file is navigated on the left and ex
 
 For quite some time now, the TShellTreeView module has no longer been installed in the Components Palette by default in many versions of Delphi (e.g., Starter Editions starting with 10.2, as well as newer RAD Studio editions).
 
-The components are included with the project and must be installed.  
+### The components are included with the project and must be installed.  
+
 However, the source code remains integrated into your Delphi installation. You can manually install the component as follows:
 
 ### Instructions:
