@@ -79,5 +79,17 @@ Copy these two files to a separate working directory.
 * Add Registration Procedure:
     * Open the file ```Vcl.Shell.ShellCtrls.pas``` in your editor and add `procedure Register;` as the last line in the `interface` section. Insert the following code at the very top of the `implementation` section:
 
+```pascal 
+procedure Register;
+begin
+  RegisterComponents('Shell Controls', [TShellListView]);
+  RegisterComponents('Shell Controls', [TShellTreeView]);
+  RegisterComponents('Shell Controls', [TShellChangeNotifier]);
+end;
+```
+
+* Installing the Package:
+In the Project Manager, right-click on the package project and select Build. Next, right-click on the package and select Install. The components ```TShellTreeView, TShellListView```, and ```TShellChangeNotifier``` will then be available to you in the "Shell Controls" category.
+
 
 
