@@ -60,6 +60,14 @@ This is a dual-pane file manager, where the file is navigated on the left and ex
 
 </br>
 
+Here, ShelTreeView and ShellListview operate in combination as a standalone file browser—though it should be noted that the primary focus lies on the visualization of files. Most functions are available and operate identically to those in Windows Explorer.
+
+</br>
+
+<img src="https://github.com/user-attachments/assets/d0bfc022-e0ff-4031-9b0b-5308ae29e684" />
+
+</br>
+
 For quite some time now, the TShellTreeView module has no longer been installed in the Components Palette by default in many versions of Delphi (e.g., Starter Editions starting with 10.2, as well as newer RAD Studio editions).
 
 ### The components are included with the project and must be installed.  
