@@ -111,7 +111,10 @@ However, there are limitations—such as cutting and moving files—that are not
 
 The standard TShellListView component in Delphi does not natively feature built-in copy-and-paste functionality for Windows Explorer actions. The component serves primarily as a pure display of the file system.
 
-To replicate the file copying, cutting, and pasting functionality found in Windows Explorer, you must interact with the native Windows Shell interfaces (IShellFolder and IContextMenu). The Solution: Tapping into the Windows Shell Context Menu. Through the IContextMenu interface, you can directly instruct Windows to execute system-wide commands—such as 'copy', 'cut', or 'paste'—on the current directory. This allows Windows to automatically handle clipboard interactions, progress dialogs, and any potential file conflicts. Here is a proven method for implementing these commands within your TShellListView:
+To replicate the file copying, cutting, and pasting functionality found in Windows Explorer, you must interact with the native Windows Shell interfaces (IShellFolder and IContextMenu). 
+
+
+The Solution: Tapping into the Windows Shell Context Menu. Through the IContextMenu interface, you can directly instruct Windows to execute system-wide commands—such as 'copy', 'cut', or 'paste'—on the current directory. This allows Windows to automatically handle clipboard interactions, progress dialogs, and any potential file conflicts. Here is a proven method for implementing these commands within your TShellListView:
 
 ### Code Example Cut-Paste
 
@@ -128,13 +131,13 @@ var
   Cidls: PItemIDList;
   ItemCount: Integer;
 begin
-  // Den übergeordneten Shell-Ordner des aktuellen Verzeichnisses holen
+  // Get the parent shell folder of the current directory.
   ParentFolder := ShellListView.Folder.ShellFolder;
   if ParentFolder = nil then Exit;
   ItemCount := ShellListView.SelCount;
   if (Command = 'paste') or (ItemCount = 0) then
   begin
-    // Für "Einfügen" oder wenn nichts ausgewählt ist, nutzen wir den Ordner selbst
+    // For "Paste," or if nothing is selected, we use the folder itself.
     if Succeeded(ParentFolder.GetUIObjectOf(ShellListView.Handle, 0, Pidl, IID_IContextMenu, nil, Pointer(ContextMenu))) then
     begin
       ZeroMemory(@InvokeInfo, SizeOf(InvokeInfo));
