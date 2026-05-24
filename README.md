@@ -113,7 +113,39 @@ The standard TShellListView component in Delphi does not natively feature built-
 
 To replicate the file copying, cutting, and pasting functionality found in Windows Explorer, you must interact with the native Windows Shell interfaces (IShellFolder and IContextMenu). The Solution: Tapping into the Windows Shell Context Menu. Through the IContextMenu interface, you can directly instruct Windows to execute system-wide commands—such as 'copy', 'cut', or 'paste'—on the current directory. This allows Windows to automatically handle clipboard interactions, progress dialogs, and any potential file conflicts. Here is a proven method for implementing these commands within your TShellListView:
 
+### Code Example Cut-Paste
 
+```pascal
+uses
+    ActiveX, ShlObj, ShellAPI;
+
+procedure ExecuteShellCommand(const ShellListView: TShellListView; const Command: string);
+var
+  ParentFolder: IShellFolder;
+  ContextMenu: IContextMenu;
+  InvokeInfo: TCMInvokeCommandInfo;
+  Pidl: PItemIDList;
+  Cidls: PItemIDList;
+  ItemCount: Integer;
+begin
+  // Den übergeordneten Shell-Ordner des aktuellen Verzeichnisses holen
+  ParentFolder := ShellListView.Folder.ShellFolder;
+  if ParentFolder = nil then Exit;
+  ItemCount := ShellListView.SelCount;
+  if (Command = 'paste') or (ItemCount = 0) then
+  begin
+    // Für "Einfügen" oder wenn nichts ausgewählt ist, nutzen wir den Ordner selbst
+    if Succeeded(ParentFolder.GetUIObjectOf(ShellListView.Handle, 0, Pidl, IID_IContextMenu, nil, Pointer(ContextMenu))) then
+    begin
+      ZeroMemory(@InvokeInfo, SizeOf(InvokeInfo));
+      InvokeInfo.cbSize := SizeOf(TCMInvokeCommandInfo);
+      InvokeInfo.hwnd := ShellListView.Handle;
+      InvokeInfo.lpVerb := PAnsiChar(AnsiString(Command));
+      ContextMenu.InvokeCommand(InvokeInfo);
+    end;
+  end;
+end;
+```
 
 
 
