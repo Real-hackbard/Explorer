@@ -58,6 +58,9 @@ This is a dual-pane file manager, where the file is navigated on the left and ex
 <img src="https://github.com/user-attachments/assets/65308827-5e1e-4dec-9419-8b4e1f515242" />   </br>
 <img src="https://github.com/user-attachments/assets/c007a2d9-1c93-4ddc-a5f6-230a0064dc12" />  
 
+</br>
+
+For quite some time now, the TShellTreeView module has no longer been installed in the Components Palette by default in many versions of Delphi (e.g., Starter Editions starting with 10.2, as well as newer RAD Studio editions).
 
 
 
